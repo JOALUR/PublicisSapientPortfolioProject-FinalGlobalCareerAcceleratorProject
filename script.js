@@ -37,7 +37,6 @@ function createCard(place) {
       </div>
     </div>
   `;
-
   // Step 4: Return the element
   return newDiv;
 }
@@ -60,5 +59,10 @@ function populateRecommendationCards(filteredPlaces) {
 // Task 4
 function findPlaceByName(placeName) {
   // Step 1: Loop through the PLACES array
-  // Step 2: If a place object's name property matches the placeName parameter, return that place object
+  for (let i = 0; i < PLACES.length; i++) {
+    if (PLACES.object === placeName) {
+      // Step 2: If a place object's name property matches the placeName parameter, return that place object
+      return PLACES.object;
+    }
+  }
 }
